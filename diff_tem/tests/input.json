@@ -1,0 +1,93 @@
+{
+    "simulation": [
+        {
+            "generate_micrographs": "yes",
+            "log_file": "simulator.log"
+        }
+    ],
+    "sample": [
+        {
+            "diameter": "1000",
+            "thickness_edge": "100",
+            "thickness_center": "50"
+        }
+    ],
+    "particle": [
+        {
+            "name": "TMV",
+            "source": "pdb",
+            "pdb_file_in": "2OM3.pdb",
+            "pdb_transf_file_in": "2OM3_transf.txt",
+            "voxel_size": "0.1",
+            "map_file_re_out": "2OM3_map.mrc",
+            "map_file_im_out": "2OM3_abs_map.mrc"
+        }
+    ],
+    "particleset": [
+        {
+            "particle_type": "TMV",
+            "num_particles": "3",
+            "particle_coords": "file",
+            "coord_file_in": "TMV_coord.txt"
+        }
+    ],
+    "geometry": [
+        {
+            "gen_tilt_data": "yes",
+            "ntilts": "61",
+            "theta_start": "-60",
+            "theta_incr": "2",
+            "geom_errors": "none"
+        }
+    ],
+    "electronbeam": [
+        {
+            "acc_voltage": "200",
+            "energy_spread": "1.3",
+            "gen_dose": "yes",
+            "total_dose": "6000"
+        }
+    ],
+    "optics": [
+        {
+            "magnification": "30000",
+            "cs": "2",
+            "cc": "2",
+            "aperture": "50",
+            "focal_length": "3",
+            "cond_ap_angle": "0.1",
+            "gen_defocus": "yes",
+            "defocus_nominal": "5"
+        }
+    ],
+    "detector": [
+        {
+            "det_pix_x": "400",
+            "det_pix_y": "400",
+            "pixel_size": "15",
+            "gain": "10",
+            "use_quantization": "yes",
+            "dqe": "0.4",
+            "mtf_a": "0.7",
+            "mtf_b": "0.2",
+            "mtf_c": "0.1",
+            "mtf_alpha": "10",
+            "mtf_beta": "40",
+            "image_file_out": "tiltseries.mrc"
+        },
+        {
+            "det_pix_x": "400",
+            "det_pix_y": "400",
+            "pixel_size": "15",
+            "gain": "10",
+            "use_quantization": "no",
+            "dqe": "0.4",
+            "mtf_a": "0.7",
+            "mtf_b": "0.2",
+            "mtf_c": "0.1",
+            "mtf_alpha": "10",
+            "mtf_beta": "40",
+            "image_file_out": "tiltseries_nonoise.mrc"
+        }
+    ]
+}

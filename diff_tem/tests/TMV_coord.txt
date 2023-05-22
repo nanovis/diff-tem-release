@@ -1,0 +1,23 @@
+# This file defines the position and orientation of three 
+# copies of the TMV fragment.
+# 
+# The file has 3 lines of data and each line contains 6 records:
+#
+  3 6
+#
+# The first particle is placed at position (-50,0,0) with its 
+# initial orientation (axis of TMV along the z-axis):
+#
+-50  5  0  0   0   0
+#
+# The second particle is placed at position (0,0,0) after being
+# rotated 90 degrees around the x-axis:
+#
+  0  5  0  0  90   0
+#
+# The third particle is placed at position (50,0,0) after being
+# rotated 90 degrees around the x-axis and then 90 degrees around
+# the z-axis. (The fourth column, which is 0 for all the particles,
+# also specifies a rotation around the z-axis.)
+#
+ 50  5  0  0  90  90
