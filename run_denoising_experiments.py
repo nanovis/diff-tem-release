@@ -42,6 +42,8 @@ if __name__ == "__main__":
                 "dose_per_img": dose_per_img,
             }
 
+            ## NOTICE: THIS IS JUST AN EXAMPLE FOR LOGGING USING WANDB, YOU SHOULD CREATE YOUR WANDB PROJECT
+            ## AND REPLACE THREE FIELDS: project, entity, id IN wandb.init function !!!!!!
             date_exp = "22052023_03"
             run = wandb.init(project="diff_tem",
                              entity="kaust-nanovis",
