@@ -14,8 +14,14 @@ You have to install all packages in below to run the code.
 * wandb
 * jupyter notebook
 
-## To estimate the modulation transfer function (MTF) parameters of the detector, please check the jupyter notebook: learn_detector_parameters.ipynb
-## To run denoising experiments, please check the python file: run_denoising_experiments.py
-
+## To estimate the modulation transfer function (MTF) parameters of the detector, please check the jupyter notebook: 
+```
+learn_detector_parameters.ipynb
+```
+## To run denoising experiments, please check the python file: 
+```
+run_denoising_experiments.py
+```
 If you meet any issues or have any concerns about this repository, please feel free to contact the corresponding author via email: 
 ngan.nguyen@kaust.edu.sa
+
